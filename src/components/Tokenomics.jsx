@@ -3,18 +3,19 @@ import { PieChart, Database, Layers, Lock } from "lucide-react";
 
 export default function Tokenomics() {
   const totalSupply = "1,000,000,000";
-  const ticker = "$4ALONE";
+  const ticker = "$4Alon";
   const blockchain = "Solana";
   const decimals = 9;
   const contract = "Coming soon";
 
   const allocations = [
-    { key: "community", label: "Community Rewards", pct: 30, desc: "Airdrops, staking, and contests", color: "#50d980" },
-    { key: "liquidity", label: "Liquidity Pool", pct: 25, desc: "Stabilizes market and prevents manipulation", color: "#2bd68f" },
-    { key: "marketing", label: "Marketing & Partnerships", pct: 20, desc: "Growth, influencer campaigns, and awareness", color: "#22b36a" },
-    { key: "development", label: "Development", pct: 15, desc: "Future utilities and ecosystem expansion", color: "#169f4f" },
-    { key: "reserve", label: "Reserve", pct: 10, desc: "Burns, treasury, and strategic funding", color: "#0f7a3f" },
+    { key: "community", label: "Community Rewards", pct: 30, desc: "Airdrops, staking, and contests", color: "#7AD04B" }, // bright accent
+    { key: "liquidity", label: "Liquidity Pool", pct: 25, desc: "Stabilizes market and prevents manipulation", color: "#65C342" },
+    { key: "marketing", label: "Marketing & Partnerships", pct: 20, desc: "Growth, influencer campaigns, and awareness", color: "#56B13A" },
+    { key: "development", label: "Development", pct: 15, desc: "Future utilities and ecosystem expansion", color: "#3F9A30" },
+    { key: "reserve", label: "Reserve", pct: 10, desc: "Burns, treasury, and strategic funding", color: "#2C7A25" },
   ];
+
 
   const gradient = useMemo(() => {
     let cum = 0;

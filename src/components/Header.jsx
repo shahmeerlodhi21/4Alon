@@ -9,7 +9,7 @@ const Header = () => {
       <div className="funky-header">
         {/* Logo */}
         <div className="funky-logo">
-         <a href="#home"> <img src={Logo} alt="4Alone" /> </a>
+         <a href="#home"> <img src={Logo} alt="4Alon" /> </a>
         </div>
 
         {/* Nav Links */}

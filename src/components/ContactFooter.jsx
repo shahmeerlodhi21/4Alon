@@ -10,18 +10,18 @@ const ContactFooter = () => {
         <h2 className="contact-heading">Let’s Connect</h2>
         <p className="contact-text">
           Have a question or want to collaborate?  
-          Join the <span style={{color: '#50d980',fontFamily: "'Londrina Solid', cursive"}}>4 ALONE</span> community across our official channels.
+          Join the <span style={{color: '#7AD04B',fontFamily: "'Londrina Solid', cursive"}}>4 Alon</span> community across our official channels.
         </p>
 
         <div className="contact-grid">
           <div className="contact-item">
             <FaEnvelope className="contact-icon" />
-            <a href="mailto:support@4alonecoin.com">support@4alonecoin.com</a>
+            <a href="mailto:support@4Aloncoin.com">support@4Aloncoin.com</a>
           </div>
 
           <div className="contact-item">
             <FaTwitter className="contact-icon" />
-            <a href="https://x.com/4AloneCoin" target="_blank" rel="noreferrer">@4AloneCoin</a>
+            <a href="https://x.com/4AlonCoin" target="_blank" rel="noreferrer">@4AlonCoin</a>
           </div>
 
           <div className="contact-item">
@@ -38,7 +38,7 @@ const ContactFooter = () => {
 
       {/* FOOTER SECTION */}
       <footer className="footer">
-        <div className="footer-logo"><a href="#home"><img src={Logo} alt="4ALONE Logo" /></a></div>
+        <div className="footer-logo"><a href="#home"><img src={Logo} alt="4Alon Logo" /></a></div>
         <div className="footer-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
@@ -48,11 +48,11 @@ const ContactFooter = () => {
         </div>
 
         <p className="footer-disclaimer">
-          4ALONE Coin <span style={{color: '#50d980',fontFamily: "'Londrina Solid', cursive"}}>($4ALONE)</span> is a community-driven project built for entertainment and cultural innovation.  
+          4Alon Coin <span style={{color: '#7AD04B',fontFamily: "'Londrina Solid', cursive"}}>($4Alon)</span> is a community-driven project built for entertainment and cultural innovation.  
           Nothing here constitutes financial advice. Always DYOR before investing.
         </p>
 
-        <p className="footer-copy">© 2025 <span style={{color: '#50d980',fontFamily: "'Londrina Solid', cursive"}}>4ALONE</span>. All Rights Reserved.</p>
+        <p className="footer-copy">© 2025 <span style={{color: '#7AD04B',fontFamily: "'Londrina Solid', cursive"}}>4Alon</span>. All Rights Reserved.</p>
       </footer>
     </section>
   );

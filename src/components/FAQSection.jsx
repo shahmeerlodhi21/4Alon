@@ -3,12 +3,12 @@ import { FaQuestionCircle, FaChevronDown } from "react-icons/fa";
 
 const faqs = [
   {
-    q: "What is 4 ALONE Coin?",
+    q: "What is 4 Alon Coin?",
     a: "A decentralized meme-inspired token created to blend entertainment, culture, and blockchain utility.",
   },
   {
     q: "Is there a presale?",
-    a: "No presale. 4 ALONE was fair-launched for full transparency.",
+    a: "No presale. 4 Alon was fair-launched for full transparency.",
   },
   {
     q: "What makes it unique?",
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "On which blockchain is it built?",
-    a: "Initially launching on Ethereum, with multi-chain support planned for future expansion.",
+    a: "Initially launching on Solana, with multi-chain support planned for future expansion.",
   },
   {
     q: "How can I earn rewards?",

@@ -9,10 +9,10 @@ const AboutUs = () => {
                 {/* LEFT SIDE CONTENT */}
                 <div className="about-content">
                     <h2 className="about-title">
-                        What is <span>4 ALONE Coin?</span>
+                        What is <span>4 Alon Coin?</span>
                     </h2>
                     <p className="about-text">
-                        4 ALONE is a new-age cryptocurrency built at the intersection of meme
+                        4 Alon is a new-age cryptocurrency built at the intersection of meme
                         culture, creativity, and real blockchain utility. It’s designed for
                         those who believe in individuality — yet thrive through collective
                         energy. <br />

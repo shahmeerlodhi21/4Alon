@@ -39,10 +39,10 @@ export default function WhyChoose() {
                 {/* LEFT CONTENT */}
                 <div className="why-left">
                     <h2 className="why-heading">
-                        WHY CHOOSE <span>4 ALONE</span>
+                        WHY CHOOSE <span>4 Alon</span>
                     </h2>
                     <p className="why-description">
-                        4 ALONE isn’t just another crypto project — it’s a movement of individuality,
+                        4 Alon isn’t just another crypto project — it’s a movement of individuality,
                         creativity, and collective strength. By combining blockchain innovation with
                         AI-powered branding, we empower every believer in true decentralization to thrive
                         together.

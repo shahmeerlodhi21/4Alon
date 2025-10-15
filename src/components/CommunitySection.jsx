@@ -7,10 +7,10 @@ const CommunitySection = () => {
         <div className="community-glow"></div>
       <div className="community-container">
         <h2 className="community-title" style={{zIndex: '999'}}>
-          Built for the Ones Who <span>Stand Alone</span> — and Rise Together
+          Built for the Ones Who <span>Stand Alon</span> — and Rise Together
         </h2>
         <p className="community-text">
-          At the heart of <strong style={{color: '#50d980',fontFamily: "'Londrina Solid', cursive"}}>4 ALONE</strong> lies a passionate, creative, and unstoppable
+          At the heart of <strong style={{color: '#7AD04B',fontFamily: "'Londrina Solid', cursive"}}>4 Alon</strong> lies a passionate, creative, and unstoppable
           community. Whether you’re a trader, artist, or builder — this is your space to
           create, connect, and grow.
         </p>

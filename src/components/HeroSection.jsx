@@ -17,7 +17,7 @@ export default function HeroSection() {
           </h1>
           <p className="hero-subtitle">
             A next-generation <strong>meme coin</strong> merging art, tech, and community
-            into one evolving ecosystem — powered by <strong>4Alone</strong>.
+            into one evolving ecosystem — powered by <strong>4Alon</strong>.
           </p>
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={() => scrollToSection("contact")}>Let's Connect →</button>
@@ -41,7 +41,7 @@ export default function HeroSection() {
         {/* RIGHT IMAGE */}
         <div className="hero-right">
           <div className="image-glow"></div>
-          <img src={coinImage} alt="4 Alone Coin" className="hero-image" />
+          <img src={coinImage} alt="4 Alon Coin" className="hero-image" />
         </div>
       </div>
     </section>

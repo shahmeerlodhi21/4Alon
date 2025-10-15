@@ -4,7 +4,7 @@ const roadmapPhases = [
     {
         icon: <FaRocket />,
         phase: "Phase 1 – Genesis",
-        text: `Launch of AI logo, brand identity, and official 4 ALONE website. Socials go live, and the first smart contract is deployed.`,
+        text: `Launch of AI logo, brand identity, and official 4 Alon website. Socials go live, and the first smart contract is deployed.`,
     },
     {
         icon: <FaUsers />,
@@ -19,7 +19,7 @@ const roadmapPhases = [
     {
         icon: <FaGlobe />,
         phase: "Phase 4 – The Future",
-        text: `CEX listings, DAO governance, 4 ALONE marketplace launch, and major strategic partnerships.`,
+        text: `CEX listings, DAO governance, 4 Alon marketplace launch, and major strategic partnerships.`,
     },
 ];
 
@@ -29,7 +29,7 @@ const Roadmap = () => {
         <section className="roadmap-section reveal" id="roadmap">
             <h2 className="roadmap-title">Our Journey Forward</h2>
             <p className="roadmap-sub">
-                Explore the evolution of <span>4 ALONE</span> — step by step toward a decentralized future.
+                Explore the evolution of <span>4 Alon</span> — step by step toward a decentralized future.
             </p>
 
             <div className="timeline">
