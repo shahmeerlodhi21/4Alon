@@ -4,6 +4,7 @@ import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import AboutUs from './components/AboutSection'
 import WhyChoose from './components/WhyChoose'
+import Tokenomics from './components/Tokenomics'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
      <HeroSection />
      <AboutUs />
      <WhyChoose />
+     <Tokenomics />
     </>
   )
 }
