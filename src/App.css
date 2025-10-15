@@ -142,7 +142,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 80px 0 0 0;
   background-color: #080903;
   overflow: hidden;
 }
@@ -397,9 +397,11 @@ body {
 }
 
 .about-section {
+  background: linear-gradient(rgba(8, 9, 3, 0.8), rgba(8, 9, 3, 0.8)),
+    url(./assets/banner.png) top center / 80% no-repeat;
   background-color: #080903;
   color: #ffffff;
-  padding: 0px 0 80px 0;
+  padding: 80px 0 80px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -604,7 +606,7 @@ body {
   height: 10px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 10px rgba(122, 208, 75, 0.1)
+  box-shadow: 0 0 10px rgba(122, 208, 75, 0.1);
 }
 
 /* RIGHT SIDE — Balanced Gallery */
@@ -620,7 +622,7 @@ body {
 }
 
 .feature-box {
-  background: #010101; ;
+  background: #010101;
   border: 1px solid rgba(122, 208, 75, 0.25);
   border-radius: 14px;
   padding: 22px 18px;
@@ -1518,7 +1520,7 @@ body {
     box-shadow: 0 0 15px rgba(122, 208, 75, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px rgba(122, 208, 75, 0.1)
+    box-shadow: 0 0 30px rgba(122, 208, 75, 0.1);
   }
 }
 .reveal {
