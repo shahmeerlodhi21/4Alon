@@ -31,7 +31,7 @@ export default function Tokenomics() {
   const [hoverKey, setHoverKey] = useState(null);
 
   return (
-    <section className="tokenomics-section" id="tokenomics">
+    <section className="tokenomics-section reveal" id="tokenomics">
       <div className="tokenomics-container">
         <h2 className="tokenomics-title">Transparent Token Distribution</h2>
         <p className="tokenomics-sub">

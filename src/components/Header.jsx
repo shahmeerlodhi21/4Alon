@@ -1,14 +1,15 @@
 import React from "react";
+import Logo from "../assets/logo.png";
 
 const Header = () => {
   const navLinks = ["Home", "About", "Tokenomics", "Roadmap", "FAQs"];
 
   return (
-    <header className="funky-header-wrapper">
+    <header className="funky-header-wrapper" >
       <div className="funky-header">
         {/* Logo */}
         <div className="funky-logo">
-          <img src="/logo.png" alt="4Alone Logo" />
+         <a href="#home"> <img src={Logo} alt="4Alone" /> </a>
         </div>
 
         {/* Nav Links */}
@@ -22,7 +23,7 @@ const Header = () => {
 
         {/* CTA */}
         <a href="#contact" className="join-btn">
-          Contact 🚀
+          Contact Us
         </a>
       </div>
     </header>

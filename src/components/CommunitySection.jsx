@@ -3,7 +3,7 @@ import { FaTelegramPlane, FaTwitter, FaDiscord } from "react-icons/fa";
 
 const CommunitySection = () => {
   return (
-    <section className="community-section">
+    <section className="community-section reveal" id="community">
         <div className="community-glow"></div>
       <div className="community-container">
         <h2 className="community-title" style={{zIndex: '999'}}>

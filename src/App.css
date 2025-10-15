@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;700&family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap");
 
+/* GLOBAL STYLES */
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px; /* header height */
+}
 body {
+  
   margin: 0;
   background-color: #000e0e;
   color: #ffffff;
@@ -47,7 +53,7 @@ body {
 }
 
 .funky-logo img {
-  height: 36px;
+  height: 45px;
   width: auto;
   filter: drop-shadow(0 0 6px #50d980); /* Neon glow effect */
 }
@@ -146,15 +152,10 @@ body {
   align-items: center;
   justify-content: space-between;
   max-width: 1220px;
-  width: 100%;
+  width: 90%;
   gap: 3rem;
 }
 
-/* LEFT SIDE */
-.hero-left {
-  flex: 1;
-  z-index: 2;
-}
 .hero-left {
   flex: 1;
   min-width: 320px;
@@ -300,16 +301,16 @@ body {
 
 /* RIGHT SIDE (IMAGE AREA) */
 .hero-right {
-  flex: 1;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .hero-image {
-  width: 100%;
-  max-width: 400px;
+  width: 140%;
+  height: auto;
   border-radius: 50%;
   z-index: 2;
   animation: float 4s ease-in-out infinite;
@@ -318,6 +319,8 @@ body {
 /* subtle glowing circle behind the image */
 .image-glow {
   position: absolute;
+  top: 80%;
+  left: 80%;
   width: 350px;
   height: 350px;
   background: radial-gradient(
@@ -1163,5 +1166,405 @@ z-index: 9999;
   .community-btn {
     width: 100%;
     justify-content: center;
+  }
+}
+
+.faq-section {
+  position: relative;
+  color: #fff;
+  padding: 0 20px 80px 20px;
+  overflow: hidden;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.faq-title {
+  font-family: "Onest", serif;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  line-height: 1.3;
+}
+
+.faq-title span {
+  font-family: "Londrina Solid", cursive;
+  color: #50d980;
+}
+
+.faq-icon {
+  color: #50d980;
+  margin-right: 10px;
+  font-size: 2.2rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(80, 217, 128, 0.25);
+  border-radius: 14px;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  border-color: #50d980;
+  box-shadow: 0 0 20px rgba(80, 217, 128, 0.15);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.faq-item.active .faq-question span {
+  color: #50d980;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.faq-answer p {
+  color: #cfcfcf;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+
+/* 🌈 Funky neon background glow */
+.faq-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(80, 217, 128, 0.2), transparent 70%);
+  filter: blur(80px);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: floatGlow 8s infinite ease-in-out alternate;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.25);
+    opacity: 0.6;
+  }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 2.2rem;
+  }
+
+  .faq-item {
+    padding: 18px;
+  }
+
+  .faq-question span {
+    font-size: 1rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-title {
+    font-size: 1.8rem;
+  }
+}
+/* CONTACT SECTION */
+.contact-footer {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background glow effects */
+.contact-footer::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(80, 217, 128, 0.2), transparent 40%);
+  filter: blur(80px);
+  z-index: 0;
+}
+
+.contact-wrapper {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto 5rem;
+  padding: 0 1.5rem;
+}
+
+.contact-heading {
+  font-size: 2.8rem;
+  font-family: "Londrina Solid", cursive;
+  font-weight: 800;
+  color: #50d980;
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  color: #d0d0d0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.contact-text span {
+  font-family: "Londrina Solid", cursive;
+  color: #50d980;
+  font-weight: 600;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 250px;
+  transition: 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-6px);
+  border-color: #50d980;
+  box-shadow: 0 0 20px rgba(80, 217, 128, 0.3);
+}
+
+.contact-icon {
+  color: #50d980;
+  font-size: 1.5rem;
+}
+
+.contact-item a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: #50d980;
+}
+
+/* FOOTER SECTION */
+.footer {
+  text-align: center;
+  padding: 4rem 1.5rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  background: linear-gradient(180deg, transparent, rgba(80, 217, 128, 0.05));
+}
+
+.footer-logo {
+  margin-bottom: 1.5rem;
+}
+.footer-logo img {
+  height: 55px;
+  width: auto;
+  filter: drop-shadow(0 0 6px #50d980); /* Neon glow effect */
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #50d980;
+  text-shadow: 0 0 10px #50d980;
+}
+
+.footer-disclaimer {
+  color: #d0d0d0;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.footer-copy {
+  color: #dcdcdc;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 2.2rem;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .footer-logo {
+    font-size: 2rem;
+  }
+}
+
+
+/* Animations */
+
+.funky-header {
+  animation: headerSlide 1.2s ease forwards;
+  opacity: 0;
+}
+@keyframes headerSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  animation: fadeUp 1.4s ease forwards;
+  opacity: 0;
+}
+.hero-subtitle {
+  animation: fadeUp 1.8s ease forwards;
+  opacity: 0;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.btn-primary {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(80, 217, 128, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(80, 217, 128, 0.6);
+  }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.feature-icon {
+  animation: iconFloat 3.5s ease-in-out infinite;
+}
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.line {
+  animation: lineGlow 2.5s linear infinite;
+}
+@keyframes lineGlow {
+  0% {
+    opacity: 0.6;
+    box-shadow: 0 0 10px rgba(80, 217, 128, 0.3);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(80, 217, 128, 0.7);
+  }
+  100% {
+    opacity: 0.6;
+    box-shadow: 0 0 10px rgba(80, 217, 128, 0.3);
+  }
+}
+.community-glow {
+  animation: moveGlow 10s ease-in-out infinite alternate;
+}
+@keyframes moveGlow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-48%, -52%) scale(1.15);
   }
 }

@@ -4,7 +4,7 @@ import { Zap, Users, MessageSquare, Lock } from "lucide-react";
 
 const AboutUs = () => {
     return (
-        <section className="about-section">
+        <section className="about-section reveal" id="about">
             <div className="about-container">
                 {/* LEFT SIDE CONTENT */}
                 <div className="about-content">

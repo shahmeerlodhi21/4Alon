@@ -26,7 +26,7 @@ const roadmapPhases = [
 
 const Roadmap = () => {
     return (
-        <section className="roadmap-section">
+        <section className="roadmap-section reveal" id="roadmap">
             <h2 className="roadmap-title">Our Journey Forward</h2>
             <p className="roadmap-sub">
                 Explore the evolution of <span>4 ALONE</span> — step by step toward a decentralized future.

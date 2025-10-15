@@ -34,7 +34,7 @@ export default function WhyChoose() {
     ];
 
     return (
-        <section className="why-section">
+        <section className="why-section reveal" id="why">
             <div className="why-container">
                 {/* LEFT CONTENT */}
                 <div className="why-left">
