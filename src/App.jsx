@@ -6,6 +6,7 @@ import AboutUs from './components/AboutSection'
 import WhyChoose from './components/WhyChoose'
 import Tokenomics from './components/Tokenomics'
 import Roadmap from './components/Roadmap'
+import CommunitySection from './components/CommunitySection'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
      <WhyChoose />
      <Tokenomics />
      <Roadmap />
+     <CommunitySection />
     </>
   )
 }

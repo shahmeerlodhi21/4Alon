@@ -415,7 +415,7 @@ body {
 
 .about-title {
   font-family: "Onest", serif;
-  font-size: 3.8rem;
+  font-size: 2.8rem;
   line-height: 1.2;
   margin-bottom: 25px;
 }
@@ -427,7 +427,7 @@ body {
 
 .about-text {
   font-family: "Poppins", sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: #dcdcdc;
   line-height: 1.9;
   margin-bottom: 60px;
@@ -1049,5 +1049,119 @@ body {
   .circle {
     width: 75px;
     height: 75px;
+  }
+}
+
+.community-section {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px 80px 20px;
+  overflow: hidden;
+}
+
+.community-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.community-title {
+  font-family: "Onest", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.community-title span {
+  font-family: "Londrina Solid", cursive;
+  color: #50d980;
+}
+
+.community-text {
+  font-size: 1.1rem;
+  color: #dcdcdc;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+.community-buttons {
+z-index: 9999;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.community-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.9rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+/* Custom colors for each button */
+.telegram:hover {
+  background: linear-gradient(90deg, #00baff, #007bff) ;
+  box-shadow: 0 0 20px #00baff;
+}
+
+.twitter:hover {
+  background: linear-gradient(90deg, #00acee, #00f0ff);
+  box-shadow: 0 0 20px #00acee;
+}
+
+.discord:hover {
+  background: linear-gradient(90deg, #7289da, #5865f2);
+  box-shadow: 0 0 20px #7289da;
+}
+
+/* Glowing gradient circles behind */
+.community-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(80, 217, 128, 0.1), transparent 70%);
+  transform: translate(-50%, -50%);
+  filter: blur(80px);
+  z-index: 1;
+  animation: pulse 6s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 0.4;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .community-title {
+    font-size: 2rem;
+  }
+  .community-text {
+    font-size: 1rem;
+  }
+  .community-btn {
+    width: 100%;
+    justify-content: center;
   }
 }
