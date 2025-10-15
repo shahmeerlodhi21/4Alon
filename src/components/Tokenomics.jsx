@@ -4,8 +4,8 @@ import { PieChart, Database, Layers, Lock } from "lucide-react";
 export default function Tokenomics() {
   const totalSupply = "1,000,000,000";
   const ticker = "$4ALONE";
-  const blockchain = "Ethereum";
-  const decimals = 18;
+  const blockchain = "Solana";
+  const decimals = 9;
   const contract = "Coming soon";
 
   const allocations = [
