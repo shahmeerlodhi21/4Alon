@@ -523,6 +523,7 @@ body {
   --bg: #000E0E;
   --text: #FFFFFF;
   --muted: #d0d0d0;
+  --max: 1220px;
   --accent: #50d980;
   --accent-2: #2bd68f;
   --container: 1220px;
