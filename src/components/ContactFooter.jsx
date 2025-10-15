@@ -1,8 +1,9 @@
 import React from "react";
 import { FaTwitter, FaTelegramPlane, FaDiscord, FaEnvelope } from "react-icons/fa";
 import Logo from "../assets/logo.png";
+import LogoDark from "../assets/logoDark.png";
 
-const ContactFooter = () => {
+const ContactFooter = ({ theme }) => {
   return (
     <section className="contact-footer reveal" id="contact">
       {/* CONTACT SECTION */}
@@ -38,7 +39,7 @@ const ContactFooter = () => {
 
       {/* FOOTER SECTION */}
       <footer className="footer">
-        <div className="footer-logo"><a href="#home"><img src={Logo} alt="4Alon Logo" /></a></div>
+        <div className="footer-logo"><a href="#home"><img src={theme === "dark" ? Logo : LogoDark} alt="4Alon Logo" /></a></div>
         <div className="footer-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>

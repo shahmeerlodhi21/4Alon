@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ArrowRight, Users } from "lucide-react";
 import coinImage from "../assets/bg.png"; // replace with your actual image
-
-export default function HeroSection() {
+import coinImageLight from "../assets/bgLight.jpg"; // replace with your actual image
+  
+export default function HeroSection({theme}) {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     section.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
     <section className="hero" id="home">
       <div className="hero-inner">
@@ -41,7 +43,7 @@ export default function HeroSection() {
         {/* RIGHT IMAGE */}
         <div className="hero-right">
           <div className="image-glow"></div>
-          <img src={coinImage} alt="4 Alon Coin" className="hero-image" />
+          <img src={theme === "dark" ? coinImage : coinImageLight} alt="4 Alon Coin" className="hero-image" />
         </div>
       </div>
     </section>
